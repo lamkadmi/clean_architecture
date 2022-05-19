@@ -1,0 +1,14 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+dependencies {
+    def domainDependencies = rootProject.ext.domainDependencies
+
+    implementation domainDependencies.kotlin
+    implementation domainDependencies.kotlin_core
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
